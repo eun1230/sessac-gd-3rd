@@ -1,0 +1,77 @@
+<!-- !+tab or enter : 자동html기본템플릿완성단축키 -->
+
+<!-- 
+    !DOCTYPE html : html5문서로 작성하겠다는 의미 (html1,2,3,4 마다 의미가 다름)
+    DOCTYPE이란 document type의 약자, 웹 문서가 어떤 형식으로 작성될 것인지를 의미
+-->
+<!DOCTYPE html>
+
+<!-- lang속성 : languages의 약자, en : english / ko : korean  -->
+<html lang="ko">
+<!-- 
+    head : 내부 정보들이 브라우저에서 직접적으로 보이지 않음
+            스타일 정보, 페이지정보 등을 담고 있음
+-->
+
+<head>
+    <!-- 인코딩방식지정 -->
+    <!-- 인코딩 : 작성된 코드를 컴퓨터가 이해할 수 있도록 바꿔주는 것
+                한글이 깨져 안나오는 경우 meta태그 사용해서 인코딩 방식을 utf-8로 지정 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title : 문서제목, 페이지제목 -->
+    <title>문서제목</title>
+</head>
+<!-- body : 브라우저에서 보여주고 싶은 내용 작성 -->
+<!-- start tag(여는태그), end tag(닫는태그)사이에 넣고 싶은 content(내용)을 작성 -->
+<!-- 태그명 + tab(enter) : 여는태그/닫는태그 자동 완성 -->
+
+<body>
+
+    <!-- h: heading의 약자 / 제목이니까 자동줄바꿈 /하나의 html에는 하나의 h태그만 /웹 검색엔진이 제일먼저 검색하는태그 -->
+    <h1>h1 </h1>
+    <h2>h2 </h2>
+    <h3>h3 </h3>
+    <h4>h4 </h4>
+    <h5>h5 </h5>
+    <h6>h6 </h6>
+    <p> p태그 : 본문태그 </p>
+    <!-- br태그 : 줄바꿈태그 (html의 content는 줄바꿈이 되지않음) -->
+    <p>두번째 <br /> p태그</p>
+    <!-- &nbsp : 공백그대로 나오기 -->
+    <p>띄어쓰기
+        &nbsp
+        &nbsp
+        &nbsp
+        &nbsp
+        &nbsp
+        &nbsp
+        테스트</p>
+
+    <!--중첩(nested) 
+        부모, 자식, 상위, 하위요소로 태그를 구분
+    -->
+    <!-- div : 블록요소, span : 인라인 요소 -->
+    <!-- 
+        파란색 span은 노란div의 자식요소,
+        body태그는 파란색span의 조상요소
+
+        형제요소(sibling) : 같은 depth또는level, 즉 같은 부모 태그를 가지고 있는 경우 
+        노란색div와 핑크색span은 형제요소
+
+        빈태그 br태그의 경우 자식요소를 가질 수 없음-->
+    <div style="background-color:rgb(251, 251, 122);">
+        파란 span의 parent
+        <span style="background-color:rgb(166, 166, 248);">
+            노란 div의 child
+        </span>
+    </div>
+    <span style="background-color: rgb(233, 171, 171);">
+        노란div의 sibling(형제관계)
+    </span>
+
+
+
+</body>
+
+</html>

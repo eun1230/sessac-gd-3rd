@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그연습</title>
+</head>
+
+<body>
+    <h2>오늘의 공부내용</h2>
+    <p>
+        오늘은 git remote repo를 만들어 연결하고 html이론을 배웠다. 그리고 지금은 tag에 대해 배우고 잇다
+    </p>
+    <br /><br /><br />
+    <!-- 가로선, 수평으로 된 줄, hr -->
+    <hr />
+    <h2>오늘의 할 일</h2>
+    <br>
+    <!-- ul의 type : disc(default), square, circle, none-->
+    <!-- ul 순서가 없는 목록 -->
+    <!-- -->
+    <ul type="none">리스트 태그 ul태그
+        <li> html 복습하기</li>
+        <li> 너무 졸리다</li>
+        <li> 집가고싶다</li>
+    </ul>
+    <!-- ol : 순서가 있는 목록 -->
+    <!-- ol의 type : 1(default), a, A, i, I -->
+    <!-- ol의 start : 시작값을 지정 -->
+    <!-- ol의 reversed : 역순으로 지정 -->
+
+    <ol type="1" start="5" reversed>
+        <h2> 아이스 카페라떼 만들기</h2>
+        <li> 우유를 180ml 컵에 넣는다</li>
+        <li> 얼음을 가득 넣는다</li>
+        <li> 에스프레소 샷을 넣어주면</li>
+        <li>완성 완료</li>
+    </ol>
+    <!-- 목록중첩 -->
+    <ul type="none">
+        <h2>음식 목록</h2>
+        <li>한식
+            <ul>
+                <li>김치찌개</li>
+                <li>불고기</li>
+            </ul>
+        </li>
+        <li>
+            양식
+            <ul>
+                <li>파스타</li>
+                <li>피자
+                    <ul>
+                        <li>치즈피자</li>
+                        <li>고구마피자</li>
+                        <li>하와이안피자</li>
+
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>중식
+            <ul>
+                <li>짜장면</li>
+                <li>짬뽕</li>
+                <li>볶음밥</li>
+            </ul>
+        </li>
+        <li>일식
+            <ul>
+                <li>스시</li>
+                <li>라멘</li>
+                <li>야끼소바</li>
+            </ul>
+        </li>
+
+    </ul>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <!-- 상대경로는 지금 위체에서 불러올 이미지까지의 경로 -->
+    <img src="./img/예안이.jpeg" alt="우리 예안이 너무 보고싶다" width="500px">
+    <!-- 절대경로는 홈 위치에서 불러올 이미지까지의 경로 -->
+    <img src="/Users/saetbyeol/Desktop/sessac-gd-3rd/01_html/img/너무잘생긴예안이.jpeg" alt="예안이내강아지" width="500px">
+    <!-- 
+    .으로 시작하는 경우 : 상대경로 
+    /로 시작하는 경우 : 절대경로 
+    -->
+    <br>
+    <img src="data:image/jpeg;base64,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"
+        alt="구글에서 가져옴" width="300px">
+    <br />
+    <br />
+    <br />
+    <hr />
+    <!-- 
+        a태그 : 하이퍼링크 태그 anchor의 약자
+        a의 href : 연결할 url
+        a의 target : _blank(새 탭으로 열리기), _self(default 현재탭에서 열리기) -->
+    <a href="http://naver.com" target="" title="기본 target속성은 _self">네이버로 이동하기</a>
+    <a href="https://google.com" target="_blank">구글 이동하기</a>
+    <a href="./01_start.html" target="_blank">01_start로 이동하기</a>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <ol type="a" start="5" reversed>
+        <h2> 아이스 카페라떼 만들기</h2>
+        <li> <strong>우유</strong>를 180ml 컵에 넣는다</li>
+        <li> <i>얼음</i>을 가득 넣는다</li>
+        <li> <i>에스프레소 샷</i> 을 넣어주면</li>
+        <li>완성 완료</li>
+    </ol>
+</body>
+
+
+</html>
