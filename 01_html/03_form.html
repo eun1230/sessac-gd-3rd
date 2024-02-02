@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form태그의 종류</title>
+</head>
+
+<body>
+    <!-- form태그 : 사용자의 입력을 받는 요소들을 묶어주는 태그 
+        속성 : action, method.. -> 서버와의 통신과 관련된 속성 
+        사용자의 입력을 위한 태그를 form태그 내부에 작성한 것을 -> 서버에 전달
+    -->
+    <form>
+        <!-- input : 사용자의 입력을 받는 태그
+            다양한 type의 속성이 있음
+            열린태그, 닫는태그가 없으므로 /로 닫아주기 -->
+        text : <input type="text" />
+        <br />
+        <!-- label : for속성을 사용해 input태그와 연결할 수 있는 태그 
+            해당 라벨을 클릭할 경우 연결된 input에 포커스를 하거나 체크할 수 있음
+            사용자 편의성을 높임 -->
+        <!-- input을 label과 함께 사용할 경우 label의 for와 input의 id가 동일하게 연결되면 ok-->
+        <label for="a">text with lavel : </label>
+        <input type="text" id="a" />
+        <br />
+        <br />
+        <label for="email">이메일 : </label>
+        <!-- placeholder : 예시 텍스트 입력(연한회색, 값이 들어가면 안보임) -->
+        <input type="email" id="email" placeholder="example@aa.co.kr" />
+        <br />
+        <br />
+        <label>비밀번호 : <input type="password" /> </label>
+        <br />
+        <br />
+
+        <label><input type="checkbox" /> 동의합니다 </label>
+        <br />
+        <!-- name : 한가지 값으로 모두 묶어주는 속성, 모두 같은 name이면 같은값으로 여기기 -->
+        <input type="checkbox" id="agree1" name="agree" />
+        <label for="agree">동의합니다 </label>
+        <br />
+        <!-- checked : 자동으로 체크되어있는 속성 -->
+        <input type="checkbox" id="agree1" checked name="agree" />
+        <label for="agree">동의합니다 </label>
+        <br />
+        <!-- disabled : 체크박스를 사용할 수 없도록 하는 속성 (비활성)-->
+        <input type="checkbox" id="agree2" disabled name="agree" />
+        <label for="agree2">동의합니다 </label>
+
+        <br />
+        <br />
+
+        <h5>다음 중 input type이 아닌 것은? (모두 고르시오)</h5>
+        <label> <input name="chk" type="checkbox" /> text </label>
+        <label> <input name="chk" type="checkbox" /> click </label>
+        <label> <input name="chk" type="checkbox" /> bread </label>
+        <label> <input name="chk" type="checkbox" /> img </label>
+        <label> <input name="chk" type="checkbox" /> date </label>
+
+        <br />
+        <br />
+        <!-- 라디오타입에서 name속성이 중요한이유는 한가지만 선택되어야하기때문에 같은name속성을 부여해야함 
+        라디오와 체크박스의 다른점을 잘 파악-->
+        <input type="radio" id="radio1" name="radio" />
+        <label for="radio1">1 radio type</label>
+
+        <input type="radio" id="radio2" name="radio" />
+        <label for="radio2">2 radio type</label>
+
+        <input type="radio" id="radio3" name="radio" />
+        <label for="radio3">3 radio type</label>
+        <br />
+        <br />
+
+        <h5>다음 중 img 태그의 속성인 것은?</h5>
+        <label> <input name="radio" type="radio" /> title </label>
+        <label> <input name="radio" type="radio" /> alt </label>
+        <label> <input name="radio" type="radio" /> mouse </label>
+        <label> <input name="radio" type="radio" /> value </label>
+        <br />
+        <br />
+
+        <label for="color">색상 선택</label>
+        <input type="color" id="color" />
+        <br />
+
+        <label for="range">범위 지정</label>
+        <input type="range" id="range" />
+        <br />
+
+        <label for="file">파일업로드</label>
+        <input type="file" id="file" />
+        <br />
+
+        <!-- number타입은 숫자외에는 입력불가능 -->
+        <!-- input창 내부 오른편에 count값을 변경시키는 화살표가 자동으로 생성 -->
+        <label for="num">숫자입력</label>
+        <input type="number" id="num" />
+        <br />
+
+        <label for="date">생년월일선택</label>
+        <input type="date" id="date" />
+        <br />
+
+        <label for="date-time">생년월일선택(시간포함)</label>
+        <input type="datetime-local" id="date-time" />
+        <br />
+
+        <!-- 버튼을 만드는 세가지 방법  -->
+        <!-- input태그의 button : 열린태그이기 때문에 내부에 자식요소를 만들 수 없음, 버튼 내부의 content는 value속성으로 -->
+        <input type="button" value="인풋버튼" />
+        <br />
+        <!-- input태그의 submit : value를지정하지않아도 기본적으로 "제출"이라는 값이 들어가고 자스없이 form태그 내의 모든 input값을 서버에 전송 -->
+        <input type="submit" value="default제출 대신 입력하고싶은 값" />
+        <Br />
+        <!-- button태그의 button : 여는태그와 닫는태그가 있어 자유롭게 스타일링 및 활용 가능-->
+        <button>
+            <div style="color:rgb(126, 10, 152)">버튼태그로만든 버튼</div>
+        </button>
+
+        <br />
+        <br />
+        <label for="textarea">많은 양의 텍스트를 받을 때 사용하는 textarea</label>
+        <br />
+        <textarea id="textarea" cols="38" rows="10" placeholder="내용을 입력해주세요"></textarea>
+        <!-- 
+        가로너비 : cols 
+        세로너비 : rows 
+        -->
+        <br />
+        <br />
+        <br />
+        <br />
+        드롭다운태그, select<br />
+        <select name="fruits" id="">
+            <optgroup label="RED">
+                <option value="apple">apple</option>
+                <option value="strawberry">strawberry</option>
+                <option value="cherry">cherry</option>
+            </optgroup>
+            <optgroup label="YELLOW">
+                <option value="pineapple">pineapple</option>
+                <option value="lemon">lemon</option>
+                <option value="banana">banana</option>
+            </optgroup>
+            <optgroup label="OTHER">
+                <option value="grape">grape</option>
+                <option value="melon">melon</option>
+                <option value="orange">orange</option>
+            </optgroup>
+        </select>
+
+
+
+
+
+    </form>
+</body>
+
+</html>
