@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table태그연습</title>
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table태그 : 표를 만드는 태그
+    <table></table>만 사용시 선 없이 만들어짐(default)
+    border, width, height, align, bgcolor,bordercolor, ...여러 속성들이 존재함 
+    속성사용 시 css속성을 사용하는 것이 좋다는 권장의 뜻으로 키워드별로 색이 안들어오는것들이 있음
+    -->
+    <table border="1" width="400" height="100" align="center" bgcolor="pink" bordercolor="red">
+        <caption>
+            <h3>테이블 제목 태그 , 캡션</h3>
+        </caption>
+        <tr>
+            <td> 1 </td>
+            <td> 2 </td>
+            <td> 3 </td>
+        </tr>
+
+        <tr>
+            <td> 4 </td>
+            <td> 5 </td>
+            <td> 6 </td>
+        </tr>
+
+        <tr>
+            <td> 7 </td>
+            <td> 8 </td>
+            <td> 9 </td>
+        </tr>
+    </table>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <table border="1" cellspacing="0" cellpadding="20" align="center">
+        <caption>
+            <h1>menu</h1>
+        </caption>
+        <tr>
+            <th> 메뉴</th>
+            <th> 가격</th>
+            <th> 비고</th>
+        </tr>
+
+        <tr>
+            <td>파스타</td>
+            <td>8900원</td>
+            <td>파스타 도대체어디있?</td>
+        </tr>
+
+        <tr>
+            <td>돈가스</td>
+            <td>9000원</td>
+            <td>1000원 추가시 미니우동 </td>
+        </tr>
+
+        <tr>
+            <td>덮밥</td>
+            <td>9400원</td>
+            <td>더부룩</td>
+        </tr>
+
+        <tr>
+            <td>삼김</td>
+            <td>1900원</td>
+            <td>냠냠</td>
+        </tr>
+
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <table border="1" cellspacing="0" cellpadding="20" align="center">
+        <caption>
+            <h1>NEW menu</h1>
+        </caption>
+        <tr>
+            <th> 메뉴</th>
+            <th> 가격</th>
+            <th> 비고</th>
+            <th> 짜잔</th>
+        </tr>
+
+        <tr>
+            <td>파스타</td>
+            <td colspan="2">8900원</td>
+            <td rowspan="6">Wkwkwks</td>
+        </tr>
+
+        <tr>
+            <td>돈가스</td>
+            <td>9000원</td>
+            <td>1000원 추가시 미니우동 </td>
+        </tr>
+
+        <tr>
+            <td>덮밥</td>
+            <td>9400원</td>
+            <td>더부룩</td>
+        </tr>
+
+        <tr>
+            <td>삼김</td>
+            <td rowspan="2">1900원</td>
+            <td>냠냠</td>
+        </tr>
+
+        <tr>
+            <td>줄김밥</td>
+            <td>먹기 좀 더 쉽긴 함</td>
+        </tr>
+        <tr>
+            <td colspan="3">볶음밥</td>
+
+        </tr>
+
+
+    </table>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

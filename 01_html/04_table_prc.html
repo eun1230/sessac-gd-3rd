@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블태그실습</title>
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" cellspacing="0" cellpadding="50" align="center" width="600">
+        <caption>
+            <h1>colspan과 rowspan(실습)</h1>
+        </caption>
+
+        <tr>
+            <td colspan="2">1</td>
+            <td rowspan="2">2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td>center</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">4</td>
+        </tr>
+
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <table border="2" width="500" align="center" cellspacing="0" cellpadding="10">
+        <caption>
+            <h1 style="color:green">스타벅스(실습)</h1>
+        </caption>
+        <tr>
+            <th> 구분 </td>
+            <th> 음료 </td>
+            <th> 가격 </td>
+            <th> 이미지 </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2"> 커피류 </td>
+            <td> 아메리카노 </td>
+            <td> 4200원</td>
+            <td> <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=110563">
+                    <img src="./img/아메리카노.jpeg" width="120" height="120" /></a> </td>
+        </tr>
+
+        <tr>
+
+            <td> 돌체라떼 </td>
+            <td> 4800원</td>
+            <td> <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=128692"><img src="./img/돌체라떼.jpeg"
+                        width="120" height="120"></a> </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2"> 주스류 </td>
+            <td> 자바칩 프라푸치노 </td>
+            <td rowspan="2"> 5000원</td>
+            <td> <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=168016"><img src="./img/자바칩.jpeg"
+                        width="120" height="120"></a> </td>
+        </tr>
+        <tr>
+
+            <td> 녹차프라푸치노 </td>
+            <td> <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=9200000002502">
+                    <img src="./img/녹차.jpeg" width="120" height="120"></a> </td>
+        </tr>
+
+    </table>
+
+
+</body>
+
+</html>
