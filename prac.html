@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 400px;
+        }
+
+        h3:hover {
+            background-color: black;
+            color: white;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        textarea:focus {
+            background-color: rgb(224, 145, 145);
+        }
+
+        #red:checked+label {
+            background-color: red;
+            color: white;
+            font-weight: 700;
+        }
+
+        #blue:checked+label {
+            background-color: blue;
+            color: white;
+            font-weight: 700;
+        }
+
+        #yell:checked+label {
+            background-color: yell;
+            color: black;
+            font-weight: 700;
+        }
+
+        button {
+            float: right;
+            padding: 5px 15px;
+            background-color: #f96666;
+            border-radius: 10px;
+            color:white;
+            border:none;
+            font-size:17px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>건의 사항을 적어주세요!</h3>
+    <form>
+        <textarea id="textbox" cols="50" rows="10" placeholder="건의사항 "></textarea>
+        <br>
+        <input type="checkbox" name="color" id="red" />
+        <label for="red"> 빨강 </label>
+        <input type="checkbox" name="color" id="blue" />
+        <label for="blue"> 파랑 </label>
+        <input type="checkbox" name="color" id="yell" />
+        <label for="yell"> 노랑 </label>
+        <button>제출</button>>
+    </form>
+</body>
+
+</html>

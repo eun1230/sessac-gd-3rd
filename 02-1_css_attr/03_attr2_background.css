@@ -1,0 +1,71 @@
+.box {
+  display: inline-block;
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+}
+/* 배경 색 관련 css */
+.background {
+  /*배경 컬러는 background만 작성해도 스타일을 지정할  수있음*/
+  /*background는 단축속성이고
+    순서는 
+    1.컬러
+    2.이미지
+    3.repeat
+    4.position or size
+    */
+  background-color: rgb(164, 221, 193);
+  background: palevioletred;
+  /* 그라데이션 
+    default : top to bottom (위 에서 아래)
+    색상 앞에 to bottom, to left, to right 등등 방향을 지정 가능
+    deg 입력시 각도 degree로도 지정가능
+    색상 뒤에 ,콤마뒤 %입력 시 해당 색상의 차지비율을 지정할 수 있음
+    */
+  background: linear-gradient(to right, gold, 30%, yellowgreen);
+}
+/* 배경 이미지 관련 속성 */
+.background-image {
+  background-image: url("./img/small_img.png");
+
+  /*  background-repeat 속성 */
+  /* default */
+  background-repeat: repeat;
+  /* 반복없음 */
+  background-repeat: no-repeat;
+  /* x, y축 반복*/
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+
+  /* background-position */
+  /* top, center, botton, left, right , 단위 */
+  background-position: center;
+  /* 두가지 방향 따로 지정 가능  x축 y축 순서로*/
+  background-position: center top;
+
+  /* background-size 속성 */
+  /* (default) auto: 원래 이미지 유지하는 속성*/
+  background-size: auto;
+  /* 배경이미지의 가로길이. (세로 길이는 비율에 맞춰 자동 지정됨) */
+  background-size: 50px;
+  /*가로는 100px, 세로는 70px*/
+  /*가로 세로 직접 지정할 경우 이미지 모양 깨질 수 있음*/
+  background-size: 100px 70px;
+  /* contain : 배경 사이즈의 작은 축에 맞춰 이미지 크기 지정 */
+  /* 이미지가 짤리지 않기 때문에 자주 사용됨 */
+  background-size: contain;
+  /* cover:배경 사이즈의 길이가 긴 축에 맞춰 이미지 크기 지정 */
+  /* 이미지가 짤릴 수 있음 */
+  background-size: cover;
+  /* 짤린부분을 overflow속성을 사용해서 보여줄 수 없음 
+이미지 요소가 아닌 배경 그 자체이기 때문*/
+
+  /* background-attachment 속성*/
+  /* scroll : (Default) */
+  background-attachment: scroll;
+  /* fixed : 기준은 viewport에 유지되면서 스크롤 해도 그자리 그대로 */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100px;
+}
