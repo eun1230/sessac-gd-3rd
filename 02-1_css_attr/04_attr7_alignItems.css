@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  width: 350px;
+  height: 300px;
+  background-color: antiquewhite;
+  /*
+    ----------------------------------------------------
+    align-items : 교차축을 기준으로 item을 어떻게 배치할 것인가
+    ----------------------------------------------------
+    - stretch ( default, 교차축을 모두 채우기 위해 늘림 , 
+    아이템의 높이가 지정되지 않았을 때 자동으로 교차축을 채우기 위해 늘어남 )
+    - flex-start ( 교차축의 시작점으로 정렬, 아이템의 높이나 너비가
+    지정되었을 때 자동으로 정렬됨 )
+    - flex-end ( 교차축의 끝점으로 정렬 )
+    - flex-center ( 교차축의 중앙에 정렬 )
+    - baseline ( 아이템을 텍스트의 베이스라인 기준으로 정렬 )
+
+    ----------------------------------------------------
+    align-content : 두 줄 이상에서 교차축 기준으로 아이템들의 정렬방식
+    ----------------------------------------------------
+    flex-wrap : wrap상태에서 아이템이 2줄 이상일때 교차축 기준으로 아이템들의 정렬방식
+    
+    stretch : 교차축 방향으로 모두 차지하기 위해 늘어남
+    flex-start : 교차축 방향으로 시작점으로 정렬
+    flex-end : 교차축 방향 끝점으로 정렬
+    center : 교차축 방향으로 중앙 정렬
+    ----------------------------------------------------
+    */
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.container .item {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+.item1 {
+  background-color: red;
+}
+.item2 {
+  background-color: rgb(255, 153, 0);
+}
+.item3 {
+  background-color: rgb(255, 255, 0);
+}
+.item4 {
+  background-color: rgb(17, 152, 17);
+}
+.item5 {
+  background-color: rgb(47, 30, 224);
+}
+
+/*아이템 속성 */
+.container2 {
+  background-color: #dfdfdf;
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.container2 .item {
+  width: 50px;
+  height: 50px;
+}
+
+.item11 {
+  background-color: rgb(209, 209, 252);
+}
+.item22 {
+  background-color: rgb(176, 176, 250);
+  align-self: flex-start;
+}
+.item33 {
+  background-color: rgb(153, 153, 251);
+  flex-basis: 100px;
+}
+.item44 {
+  background-color: rgb(133, 133, 251);
+}
+.item55 {
+  background-color: rgb(87, 87, 251);
+  order: 1;
+}
+.item66 {
+  background-color: rgb(60, 60, 245);
+}
+.item77 {
+  background-color: rgb(28, 28, 250);
+}
+.item88 {
+  background-color: rgb(6, 6, 161);
+}

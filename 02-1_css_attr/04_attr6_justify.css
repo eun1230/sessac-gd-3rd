@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  width: 100vw;
+  background-color: antiquewhite;
+  /*
+  ------------------------------------------------
+  justify-content : 주축 아이템의 정렬방법 / 배치방법
+  ------------------------------------------------
+  - flex-start (default, 아이템을 start기점을 기준으로 나열)
+  - flex-end ( 아이템을 end기점을 기준으로 나열 )
+  - space-around ( 아이템들의 모든 여백을 동일하게 갖도록 정렬 , 
+  양 끝 여백의 단위가 1이라면 아이템 사이의 여백들은 2)
+  - space-evenly ( start부터 첫 아이템의 간격, 아이템 사이들의
+  간격, 마지막 아이템부터 end까지의 모든 간격이 동일 )
+  - space-between ( 처음과 마지막 아이템을 양 끝에 붙이고, 나머지
+  아이템 사이 간격을 동일하게 나눔 )
+  - center ( 아이템들을 가운데로 정렬 )
+  ------------------------------------------------
+  */
+  justify-content: center;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+.item1 {
+  background-color: red;
+}
+.item2 {
+  background-color: rgb(255, 153, 0);
+}
+.item3 {
+  background-color: rgb(255, 255, 0);
+}
+.item4 {
+  background-color: rgb(17, 152, 17);
+}
+.item5 {
+  background-color: rgb(47, 30, 224);
+}

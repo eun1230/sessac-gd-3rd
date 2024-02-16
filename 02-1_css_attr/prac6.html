@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>애벌레</title>
+    <style>
+        .a {
+            position: relative;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .circle1 {
+            background-color: rgb(16, 16, 150);
+            top: 50px;
+            left: 100px;
+        }
+
+        .white {
+            position: absolute;
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            top: 22px;
+            left: 20px;
+            border-radius: 50%;
+        }
+
+        .black {
+            position: absolute;
+            background-color: black;
+            width: 20px;
+            height: 20px;
+            top: 10px;
+            left: 5px;
+            border-radius: 50%;
+        }
+
+
+        .circle2 {
+            background-color: rgb(47, 47, 177);
+            top: 100px;
+            left: 150px;
+        }
+
+        .circle3 {
+            background-color: rgb(79, 79, 204);
+            top: 150px;
+            left: 200px;
+        }
+
+        .circle4 {
+            background-color: rgb(102, 102, 213);
+            top: 200px;
+            left: 220px;
+        }
+
+        .grass {
+            background-image: url("./img/grass.png");
+            width: 500px;
+            height: 120px;
+            top: 240px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .circle5 {
+            background-color: rgb(159, 159, 234);
+            top: 250px;
+            left: 270px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="circle circle1">
+            <div class="white">
+                <div class="black"></div>
+            </div>
+
+        </div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="grass"></div>
+        <div class="circle circle5"></div>
+    </div>
+</body>
+
+</html>

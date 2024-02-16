@@ -4,31 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>검색바</title>
     <style>
         input {
             width: 500px;
-            height: 100px;
-            background-color: #e8e8e8;
-            background-image: url("./img/search-icon.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 30px;
-            border-radius: 70px;
-            padding-left: 170px;
-            padding-top: 30px;
+            height: 50px;
+            background-color: #f4f3f3;
             border: none;
-
+            border-radius: 20px;
+            background-image: url("./img/search-icon.png");
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: 15px 10px;
+            padding: 0 15px 0 55px;
+            font-size: 20px;
         }
 
-        input:hover {
+        input:focus {
+            /* 포커스 시 자동으로 생기는 테두리 속성 */
+            outline: none;
+        }
+
+        /* not(input:focus)은 인풋에 포커스 되었을 때를 제외한 hover상태를 위해 작성 */
+        input:hover:not(input:focus) {
             background-color: rgb(191, 191, 191);
         }
 
         input::placeholder {
             color: gray;
-            font-size: 50px;
+            font-size: 20px;
         }
+        
     </style>
 </head>
 
