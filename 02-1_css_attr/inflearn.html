@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inflearn header 클론 코딩</title>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/837ff3adc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./inflearn.css" />
+
+    <!-- 탭 아이콘 설정 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 파비콘이란? favorite icon
+     - 웹 브라우저 상단에 있는 탭에 표시됨.
+     - 크롬 홈에 나타나기도 함.
+     - 파비콘이 웹사이트의 대표 아이콘으로 여겨지고,
+       사용자에게 주는 시각적인 식별자가 될 수 있음
+    -->
+
+    <style>
+        .inner {
+            display: flex;
+            width: 97%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu-left {
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+        }
+
+        .menu-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-right>* {
+            padding: 5px;
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+        li a:hover {
+            color: rgb(53, 179, 68);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo a {
+            color: rgb(53, 179, 68);
+        }
+
+
+
+        * {
+            /* 태그에 기본적으로 적용되어 있는 margin,padding 없애기 */
+            /* border-box 안주면 검색창 이상해짐 */
+            box-sizing: border-box;
+
+        }
+
+        header {
+            margin: 0;
+            box-shadow: 1px 0 10px rgba(135, 135, 135, 0.461);
+        }
+
+        header .inner .menu-right .header__search i {
+            /* 돋보기 input 안으로 이동시키기*/
+            /* 축으로 이동시킴 */
+            transform: translateY(15%);
+        }
+
+        input {
+            border-style: none;
+            background-color: rgb(248, 245, 245);
+        }
+
+        .header__search {
+            height: 35px;
+            background-color: rgb(248, 245, 245);
+            border-radius: 5px;
+            align-items: center;
+        }
+        .header__search:hover:not(header__search:focus) {
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(211, 209, 209);
+        }
+        input:focus {
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(53, 179, 68);
+        }
+
+   
+
+        /* btn */
+
+        .btn {
+            cursor: pointer;
+            width: 58px;
+            height: 35px;
+            border-style: solid;
+            margin-left: 10px;
+            border-color: rgb(219, 220, 221);
+            border-width: 1px;
+            border-radius: 5px;
+
+        }
+
+        .btn--white {
+            background-color: white;
+
+        }
+
+        .btn--red {
+            background-color: rgba(255, 116, 88, 0.944);
+            color: white;
+            padding: 0;
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <!-- header 구조는 아래와 같음
+      - header > .inner > nav + nav
+        - nav1(메뉴와 로고) > div.logo + ul.menu
+        - nav2(로그인과 검색) >div.검색창+div.로그인버튼 + div.회원가입버튼
+     -->
+    <header>
+        <div class="inner">
+            <nav class="menu-left">
+                <div class="logo">
+                    <a href="#"><i class="fa-brands fa-envira"></i>Inflearn</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">강의</a></li>
+                    <li><a href="#">로드맵</a></li>
+                    <li><a href="#">멘토링</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">인프런</a></li>
+                </ul>
+            </nav>
+            <nav class="menu-right">
+                <div class="header__search">
+                    <input type="text" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button class="btn btn--white">로그인</button>
+                <button class="btn btn--red">회원가입</button>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>
