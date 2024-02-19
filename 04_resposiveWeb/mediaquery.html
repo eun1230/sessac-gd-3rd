@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .media {
+            background-color: rgb(247, 196, 93);
+        }
+
+        .header-normal {
+
+        }
+
+        .header-mobile {
+            display: none;
+        }
+        .img-container{
+            width:100vw;
+            display:flex;
+            justify-content: space-around;
+        }
+        .img-container img{
+
+        }
+
+        @media screen and (max-width : 800px) {
+            /* 800 이하일 때 적용되는 css*/
+            .media {
+                background-color: rgb(174, 244, 100);
+            }
+        }
+
+        @media screen and (min-width : 1200px) {
+            /* 1200px 이상일 때 적용되는 css*/
+            .media {
+                background-color: rgb(100, 174, 244);
+            }
+        }
+
+        @media screen and (max-width:720px) {
+            /*모바일 헤더 */
+            .header-mobile {
+                display: block;
+            }
+            .header-normal{
+                display: none;
+            }
+            .img-container{
+                flex-direction:column;
+                align-items: center;
+            }
+            .img-container img{
+                width:80vw;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="media">
+        mediaquery
+    </div>
+    <hr>
+    <header class="header-normal">웹, 태블릿 헤더</header>
+    <header class="header-mobile">모바일 헤더 </header>
+    <hr>
+    <section class="img-container">
+        <img src="./img/pooh.png">
+
+    </section>
+</body>
+
+</html>

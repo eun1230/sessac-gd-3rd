@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media screen and (min-width : 500px) {
+            body {
+                background-color: rgb(127, 232, 255);
+            }
+        }
+
+        @media screen and (max-width : 300px) {
+            body {
+                background-color: rgb(236, 176, 11);
+            }
+        }
+
+        @media screen and (max-height : 300px) {
+            p {
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+
+        @media screen and (min-height : 500px) {
+            .container {
+                background-color: green;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <p class="txt">미디어 쿼리</p>
+    </div>
+</body>
+
+</html>
