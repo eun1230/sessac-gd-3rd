@@ -65,7 +65,7 @@
   /* scroll : (Default) */
   background-attachment: scroll;
   /* fixed : 기준은 viewport에 유지되면서 스크롤 해도 그자리 그대로 */
-  background-attachment: fixed;
+
   background-position: center;
   background-size: 100px;
 }

@@ -86,29 +86,31 @@
             transform: translateY(15%);
         }
 
+        .header__search {}
+
         input {
             border-style: none;
-            background-color: rgb(248, 245, 245);
-        }
-
-        .header__search {
-            height: 35px;
-            background-color: rgb(248, 245, 245);
             border-radius: 5px;
-            align-items: center;
-        }
-        .header__search:hover:not(header__search:focus) {
-            border-style: solid;
-            border-width: 1px;
-            border-color: rgb(211, 209, 209);
-        }
-        input:focus {
-            border-style: solid;
-            border-width: 1px;
-            border-color: rgb(53, 179, 68);
+            padding: 2px;
+            background-color: rgb(248, 245, 245);
+            height: 35px;
+            background-image: url("./img/Vector.png");
+            background-repeat: no-repeat;
+            background-size: 18px;
+            background-position: 120px;
         }
 
-   
+        input:hover:not(input:focus) {
+            border: 1.5px solid;
+            border-color: rgb(211, 209, 209);
+            outline: none;
+        }
+
+        input:focus {
+            border: 1.5px solid;
+            border-color: rgb(53, 179, 68);
+            outline: none;
+        }
 
         /* btn */
 
@@ -165,7 +167,6 @@
             <nav class="menu-right">
                 <div class="header__search">
                     <input type="text" />
-                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <button class="btn btn--white">로그인</button>
                 <button class="btn btn--red">회원가입</button>

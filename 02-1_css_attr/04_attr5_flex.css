@@ -31,7 +31,7 @@
   width: 350px;
   height: 200px;
   background-color: antiquewhite;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .item {

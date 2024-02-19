@@ -17,7 +17,7 @@
   - center ( 아이템들을 가운데로 정렬 )
   ------------------------------------------------
   */
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .item {

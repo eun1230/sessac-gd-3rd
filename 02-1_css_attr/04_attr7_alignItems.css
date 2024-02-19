@@ -28,7 +28,6 @@
     */
   flex-wrap: wrap;
   align-items: flex-end;
-  align-content: flex-end;
 }
 
 .container .item {
@@ -57,9 +56,11 @@
 /*아이템 속성 */
 .container2 {
   background-color: #dfdfdf;
-  width: 100%;
+  width: 20%;
   height: 400px;
   display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .container2 .item {
@@ -72,25 +73,24 @@
 }
 .item22 {
   background-color: rgb(176, 176, 250);
-  align-self: flex-start;
 }
 .item33 {
   background-color: rgb(153, 153, 251);
-  flex-basis: 100px;
 }
 .item44 {
   background-color: rgb(133, 133, 251);
 }
 .item55 {
   background-color: rgb(87, 87, 251);
-  order: 1;
 }
 .item66 {
   background-color: rgb(60, 60, 245);
 }
 .item77 {
   background-color: rgb(28, 28, 250);
+  color: white;
 }
 .item88 {
   background-color: rgb(6, 6, 161);
+  color: white;
 }
