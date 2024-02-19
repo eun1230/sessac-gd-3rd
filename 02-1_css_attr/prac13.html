@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공 움직이기</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(to right, gold 10%, rgb(252, 176, 0));
+            box-shadow: -5px 5px 10px inset rgba(51, 51, 51, 0.5);
+            animation: anim 10s linear infinite;
+            position: relative;
+        }
+
+        @keyframes anim {
+            0% {
+                transform: translate(0px);
+            }
+
+            25% {
+                transform: translate(calc(100vw - 100px), 0px);
+            }
+
+            50% {
+                transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+            }
+
+            75% {
+                transform: translate(0px, calc(100vh - 100px));
+            }
+
+            100% {
+                transform: translate(0px);
+            }
+
+        }
+
+
+
+        .text {
+            animation: ani 3s ease-in 1 alternate;
+
+        }
+
+        @keyframes ani {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+
+    </div>
+    <div class="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Quibusdam optio quod odio autem quos eos et at cupiditate
+        reprehenderit beatae, nobis repellendus rerum dolor consectetur ad, eius, nemo officiis. Fugit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque, facilis consequatur, at eos placeat
+        exercitationem, eveniet dolore nulla sunt commodi ipsum quisquam sequi nesciunt nemo officia corrupti
+        praesentium dolorum?
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+/* 
+-----------------------------------------------------------------------------------------------
+transition 
+-----------------------------------------------------------------------------------------------
+변화가 일어날 때 사용하는 속성
+-----------------------------------------------------------------------------------------------
+transition : 프로퍼티 값 변경 시, 일정 시간에 걸쳐 변화가 일어나도록 함
+- transition-property : 변화 대상 css 속성 지정 (defautl : all_)
+
+- transition-duration : 변화가 일어날 시간(빨강에서 파랑으로 변하는 시간 -1초안에 바뀔지 등등) 단위는 second, s
+
+- transition-timing-function : 변화 시간별 속도 지정 (default : ease)
+    - ease : 느렸다가 빨라졌다가 느려짐
+    - linear : 속도 일정
+    - ease-in : 천천히 시작해서 정상속도가 됨
+    - ease-out : 정상속도에서 천친히 끝남
+    - ease-in-out : 천천히 시작-> 정상속도 -> 느려짐 
+
+- transition-delay : 지연시간 (단위:s)
+-----------------------------------------------------------------------------------------------
+ */
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: black;
+  transition-duration: 1s;
+}
+
+.box:hover {
+  background-color: pink;
+  height: 120px;
+  width: 120px;
+  transition-property: all; /*이름을 지어주는것*/
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: 1s; /*1초뒤에 실행됨*/
+  /* 단축 속성 (순서가 매우 중요) 
+  transition: property duraition timing-function delay 
+  기본적으로 duration속성은 꼭 적어줘야되고 나머진 안적어도 default값 먹힘
+  /* 
+  property에 작성된 css속성만 transition이 적용됨
+  width, height는 호버하자마자 변하지만 배경색은 1초 뒤에 1초동안 ease -in속도로 분홍색으로 변화함 
+  */
+  transition: background-color 1s ease-in;
+}
+
+.box2:hover {
+  background-color: rgb(169, 215, 255);
+  transform: translateX(200px) scaleX(2);
+}
+.box3:hover {
+  opacity: 0;
+}

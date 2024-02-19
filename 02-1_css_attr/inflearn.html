@@ -13,13 +13,19 @@
     <!-- 탭 아이콘 설정 -->
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- 파비콘이란? favorite icon
-     - 웹 브라우저 상단에 있는 탭에 표시됨.
-     - 크롬 홈에 나타나기도 함.
-     - 파비콘이 웹사이트의 대표 아이콘으로 여겨지고,
-       사용자에게 주는 시각적인 식별자가 될 수 있음
+- 웹 브라우저 상단에 있는 탭에 표시됨.
+- 크롬 홈에 나타나기도 함.
+- 파비콘이 웹사이트의 대표 아이콘으로 여겨지고,
+사용자에게 주는 시각적인 식별자가 될 수 있음
     -->
 
     <style>
+        * {
+            /* 태그에 기본적으로 적용되어 있는 margin,padding 없애기 */
+            /* border-box 안주면 검색창 이상해짐 */
+            box-sizing: border-box;
+        }
+
         .inner {
             display: flex;
             width: 97%;
@@ -40,7 +46,6 @@
 
         .menu-right>* {
             padding: 5px;
-
         }
 
         ul {
@@ -66,15 +71,6 @@
             color: rgb(53, 179, 68);
         }
 
-
-
-        * {
-            /* 태그에 기본적으로 적용되어 있는 margin,padding 없애기 */
-            /* border-box 안주면 검색창 이상해짐 */
-            box-sizing: border-box;
-
-        }
-
         header {
             margin: 0;
             box-shadow: 1px 0 10px rgba(135, 135, 135, 0.461);
@@ -86,30 +82,28 @@
             transform: translateY(15%);
         }
 
-        .header__search {}
-
         input {
-            border-style: none;
             border-radius: 5px;
             padding: 2px;
             background-color: rgb(248, 245, 245);
-            height: 35px;
+            height: 40px;
             background-image: url("./img/Vector.png");
             background-repeat: no-repeat;
             background-size: 18px;
-            background-position: 120px;
+            background-position: right;
+            border: 1px solid;
+            border-color: white;
+            margin-right: 6px;
+            width: 100%;
         }
 
         input:hover:not(input:focus) {
-            border: 1.5px solid;
+            border: 1px solid;
             border-color: rgb(211, 209, 209);
-            outline: none;
         }
 
         input:focus {
-            border: 1.5px solid;
-            border-color: rgb(53, 179, 68);
-            outline: none;
+            outline-color: rgb(53, 179, 68);
         }
 
         /* btn */
@@ -123,33 +117,26 @@
             border-color: rgb(219, 220, 221);
             border-width: 1px;
             border-radius: 5px;
-
         }
 
         .btn--white {
             background-color: white;
-
         }
 
         .btn--red {
             background-color: rgba(255, 116, 88, 0.944);
             color: white;
             padding: 0;
-
         }
     </style>
-
-
-
 
 </head>
 
 <body>
     <!-- header 구조는 아래와 같음
-      - header > .inner > nav + nav
-        - nav1(메뉴와 로고) > div.logo + ul.menu
-        - nav2(로그인과 검색) >div.검색창+div.로그인버튼 + div.회원가입버튼
-     -->
+    - header > .inner > nav + nav
+    - nav1(메뉴와 로고) > div.logo + ul.menu
+    - nav2(로그인과 검색) >div.검색창+div.로그인버튼 + div.회원가입버튼 -->
     <header>
         <div class="inner">
             <nav class="menu-left">
