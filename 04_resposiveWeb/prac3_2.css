@@ -35,8 +35,10 @@ header .inner .menu {
 header .inner .menu li {
   margin-right: 20px;
 }
-.small-menu,
-.menu-bar {
+.small-menu {
+  display: none;
+}
+header .menu-bar {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -48,6 +50,7 @@ header .inner .menu li {
     left: calc(50% - 25px);
   }
   header .menu-bar {
+    display: block;
     position: absolute;
     font-size: 30px;
     line-height: 100px;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - utils</title>
+    <!-- 부트스트랩  CDN-->
+    <!-- 부트스트랩 css 링크 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- 부트스트랩 자바스크립트 링크  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1>BOOTSTRAP _ UTILS</h1>
+
+    <!-- background -->
+    <h2>background</h2>
+    <div class="bg-primary">.bg-primary</div>
+    <div class="bg-secondary">.bg-secondary</div>
+    <div class="bg-success">.bg-success</div>
+    <div class="bg-danger">.bg-danger</div>
+    <div class="bg-warning">.bg-warning</div>
+    <div class="bg-info">.bg-info</div>
+    <div class="bg-light">.bg-light</div>
+    <div class="bg-dark text-white">.bg-dark</div>
+
+    <!-- 투명색으로 바뀌고 부모요소의 색이 보이게 되는 bg-transparent -->
+    <div class="bg-primary">
+        <div class="bg-transparent">.bg-transparent</div>
+    </div>
+    <br /><br />
+
+    <!-- 글자 색상을 바꾸는 color -->
+    <h2>color</h2>
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning bg-dark">.text-warning</p>
+    <p class="text-info bg-dark">.text-info</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-dark">.text-dark</p>
+    <p class="text-white bg-primary">.text-white</p>
+    투명도가 살짝 들어가게 되는 body
+    <p class="text-body">.text-body</p>
+    좀 더 밝은 색
+    <p class="text-muted">.text-muted</p>
+
+    <!-- display -->
+    <h2>display</h2>
+    display:inline -> content크기만큼 크기를 가진다 / 줄바꿈이 없음
+    <div class="d-inline bg-primary">.d-inline</div>
+    <div class="d-inline bg-danger">.d-inline</div>
+    <br /><br />
+    display:block -> width가 자신의 부모요소의 100%를 차지함 / 가로 한 줄을 모두 차지함 / 줄바꿈이 발생함
+    <div class="d-block bg-primary">.d-block</div>
+    <div class="d-block bg-danger">.d-block</div>
+    <br /><br />
+    display:none -> 아예사라짐 / 자리차지도 하지 않음
+    <div class="d-none bg-danger">.d-none</div>
+    <br /><br />
+    display:flex -> 기본적으로 가로방향으로 배치되고, 자신이 가진 content의 width만큼 너비를 차지함
+    / height속성을 따로 지정하지 않는 경우는 (부모요소)컨테이너의 height 높이만큼 늘어남
+    / 앞에 parent를 같이 붙여줘야함
+
+    <div class="parent d-flex justify-content-between align-items-center border" style="height:300px;">
+        <div class="child text-primary border" style="width:100px; height:100px;"> child1 </div>
+        <div class="child text-primary border" style="width:100px; height:100px;"> child2 </div>
+        <div class="child text-primary border" style="width:100px; height:100px;"> child3 </div>
+        <div class="child text-primary border" style="width:100px; height:100px;"> child4 </div>
+    </div>
+
+    <br /><br />
+    <!-- border -->
+    <h2>border</h2>
+    <span class="border border-primary">border border-primary</span>
+    <span class="border border-danger">border border-danger</span>
+    <span class="border border-success rounded">border border-success rounded</span>
+    
+</body>
+
+</html>
