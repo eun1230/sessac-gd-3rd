@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-start</title>
+    <!-- js사용하기 (위에서 부터 아래 순서로 읽힘) -->
+
+    <!-- 방법 1 : 내장방식 ( head 태그 내 script 태그 내부에 작성 ) -->
+    <script>
+        alert("내장방식 ( head -> script ) alert");
+        console.log("내장방식( head -> script ) console");
+    </script>
+
+    <!-- 방법 2 : 링크방식 ( 외부파일.js를 head 태그 내 script태그-src속성에 파일경로 작성하여 불러오기) -->
+    <script src="./01_start.js">
+
+    </script>
+
+    <link rel="stylesheet" href="./01_start.css">
+</head>
+<!-- head와 body사이에 작성 -->
+<script>
+    alert("헤드와 바디 사이 작성");
+</script>
+
+<body>
+    <script>
+        alert("바디에 작성");
+    </script>
+
+</body>
+<script>
+    alert("바디 밖에서 작성");
+</script>
+
+</html>
