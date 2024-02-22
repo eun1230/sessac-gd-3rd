@@ -15,23 +15,19 @@
             background-color: rgb(247, 196, 93);
         }
 
-        .header-normal {
-
-        }
 
         .header-mobile {
             display: none;
         }
-        .img-container{
-            width:100vw;
-            display:flex;
-            justify-content: space-around;
-        }
-        .img-container img{
 
+        .img-container {
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
         }
 
         @media screen and (max-width : 800px) {
+
             /* 800 이하일 때 적용되는 css*/
             .media {
                 background-color: rgb(174, 244, 100);
@@ -39,6 +35,7 @@
         }
 
         @media screen and (min-width : 1200px) {
+
             /* 1200px 이상일 때 적용되는 css*/
             .media {
                 background-color: rgb(100, 174, 244);
@@ -46,22 +43,25 @@
         }
 
         @media screen and (max-width:720px) {
+
             /*모바일 헤더 */
             .header-mobile {
                 display: block;
             }
-            .header-normal{
+
+            .header-normal {
                 display: none;
             }
-            .img-container{
-                flex-direction:column;
+
+            .img-container {
+                flex-direction: column;
                 align-items: center;
             }
-            .img-container img{
-                width:80vw;
+
+            .img-container img {
+                width: 80vw;
             }
         }
-
     </style>
 </head>
 

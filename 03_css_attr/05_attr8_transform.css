@@ -12,7 +12,7 @@ img {
   border: 2px solid gold;
 }
 img:hover {
-  /* 
+/* 
 ---------------------------------------------------
 skew()
 ---------------------------------------------------
@@ -55,7 +55,7 @@ translatexZ z축을 기준으로 이동
   transform: translateY(-200px);
   /*z축은 perspective가 없으면 확인하기 어려움*/
   transform: perspective(500px) translateZ(100px);
-  /* 2개일 대 단축 속성 */
+  /* 2개일 때 단축 속성 */
   transform: translate(100px, 100px);
   transform: translate(-100px, -100px);
   /* 3개일 때 단축 속성 */
