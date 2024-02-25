@@ -57,7 +57,6 @@ let name = "world";
 function hello(name) {
   alert(`Hello! ${name}`);
 }
-hello(name);
 
 //연습문제1
 let num1 = prompt("num1입력");
@@ -70,6 +69,6 @@ console.log(multifly(num1, num2));
 //연습문제2
 let num3 = prompt(" 숫자1개 입력 ");
 const square = function (num3) {
-  return num3 * num3;
+  return num3 ** 2;
 };
 console.log(square(num3));
