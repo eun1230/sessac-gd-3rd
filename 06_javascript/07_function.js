@@ -61,7 +61,7 @@ function hello(name) {
 //연습문제1
 let num1 = prompt("num1입력");
 let num2 = prompt("num2입력");
-function multifly(num1, num2) {
+function multifly(num1, num2) {    
   return num1 * num2;
 }
 console.log(multifly(num1, num2));
