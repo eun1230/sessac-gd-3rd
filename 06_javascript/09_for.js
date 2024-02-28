@@ -40,24 +40,34 @@ console.log("-----------q1------------");
 
 let i = 0;
 let sum = 0;
-for (i = 0; i < 100; i++) {
+for (i = 0; i <= 100; i++) {
   if (i % 2 == 0 || i % 5 == 0) {
     sum += i;
   }
+}
+
+console.log(sum);
+i = 0;
+sum = 0;
+while (i <= 100) {
+  if (i % 2 == 0 || i % 5 == 0) {
+    sum += i;
+  }
+  i++;
 }
 console.log(sum);
 
 console.log("-----------q2------------");
 
-for (i = 0; i < 10000; i++) {
+for (i = 0; i <= 10000; i++) {
   if (i % 13 == 0 && i % 2 != 0) {
     console.log(i);
   }
 }
-console.log("-----------q2-2------------");
+console.log("-----------q2-심화-----------");
 
-let num = prompt("num입력");
-for (i = 0; i < num; i++) {
+let num = prompt("수 입력");
+for (i = 0; i <= num; i++) {
   if (i % 13 == 0 && i % 2 != 0) {
     console.log(i);
   }
