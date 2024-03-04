@@ -11,27 +11,12 @@ div {
   text-align: center;
   line-height: 100px;
 }
-/* position 속성 */
 
-/* default값 static */
-/* .position:static -> 기본값이기 때문에 작성하지 않아도 됨 */
-/* 인라인 요소라면 왼쪽에서 오른쪽으로 쌓임 */
-/* 블록 요소라면 위에서 아래로 쌓임 */
-/* top, bottom, right, left 속성 적용 안됨 */
 .position-static {
   position: static;
   background: aquamarine;
 }
 
-/* positnon relative */
-/* 일반적인 흐름에 따라 배치하되 top, bottom, left, right
-자신이 원래 있어야 하는 원래기준
-top : 위에서 부터의 여백
-bottom : 아래서부터의 여백
-left : 왼쪽으로부터의 여백
-right : 오른족에서부터의 여백
-자기 자리를 벗어나도
-*/
 .position-relative {
   position: relative;
   background-color: rgb(224, 168, 193);
@@ -41,23 +26,14 @@ right : 오른족에서부터의 여백
   right: 15px;
 }
 
-/* absolute : 절대 위치
-기준점
-position : static이 아닌 같은 값을 가지는 제일 가까운 조상 기준
-만약 position : static이 아닌 값을 가진 조상이 없다면 viewport를 기준
-특정 요소를 기준 삼아 top bottom left right 속성을 지정함
-문서흐름을 벗어남 -> 자기 자리가 사라짐 */
+
 .position-absolute {
   background-color: gold;
   position: absolute;
   top: 0;
 }
 
-/* fixed : 고정된 위치 
-viewport를 기준으로 특정 위치에 배치
-스크롤 되어도 움직이지 않음 -> header, top-button제작시 많이 사용 
-top, bottom, left, right 속성 중 하나 이상을 지정
-*/
+
 .position-fixed {
   background-color: rgb(118, 218, 251);
   position: fixed;

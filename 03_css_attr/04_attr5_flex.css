@@ -1,32 +1,4 @@
 .container {
-  /* 
-    ----------------------------------------------------
-    - flex기본용어
-    주축 : main axis
-    교차축 : cross-axis
-    ----------------------------------------------------
-    display : flex는 자식요소의 정렬 방법을 지정하는 속성
-    display : inline-flex도 있음 
-    기본적으로 자식요소들이 왼쪽에서 오른쪽으로 쌓임
-    즉 주축의 기본 방향이 좌 -> 우
-
-    flex-direction : row ( 가로-행 default)
-    row(왼 -> 오) , 
-    row-reverse(오 -> 왼) ,
-    colomn(위 -> 아래) ,
-    colomn-reverse(아래 -> 위)
-
-    flex-wrap : 부모요소가 자식요소들보다 작은 너비의 값을 가졌을 때 줄바꿈의 유무
-    nowrap( default, 줄바꿈 없음 )
-    wrap( 줄바꿈 )
-    wrap-reverse(반대로 줄바꿈)
-
-    ----------------------------------------------------
-    flex와 inline-flex의 차이
-    flex : 부모요소가 수직으로 쌓임 ( block요소처럼 )
-    inline-flex : 부모요소가 수평으로 쌓임 ( inline요소처럼 )
-    ----------------------------------------------------
-    */
   display: flex;
   width: 350px;
   height: 200px;

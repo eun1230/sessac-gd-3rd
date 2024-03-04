@@ -37,7 +37,7 @@ for (let i = 0; i < numArr.length; i++) {
 console.log("numSum :", numSum);
 
 console.log("-----------q1------------");
-
+//for
 let i = 0;
 let sum = 0;
 for (i = 0; i <= 100; i++) {
@@ -47,6 +47,8 @@ for (i = 0; i <= 100; i++) {
 }
 
 console.log(sum);
+
+//while
 i = 0;
 sum = 0;
 while (i <= 100) {
@@ -99,3 +101,29 @@ while (a <= 9) {
   a++;
   b = 1;
 }
+
+//1 ~ 100
+let arr5 = [];
+for (let i = 1; i <=100; i++) {
+  arr5.push(i);
+}
+//for
+sum = 0;
+for (let i = 0; i <arr5.length; i++) {
+  sum+=arr5[i];
+}
+console.log(sum);
+
+//for of
+sum = 0;
+for (let i of arr5) {
+  sum += i;
+}
+console.log(sum);
+
+//for each
+sum = 0;
+arr5.forEach(function (i) {
+  sum += i;
+});
+console.log(sum);

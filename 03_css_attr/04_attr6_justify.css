@@ -1,7 +1,3 @@
-.container {
-  display: flex;
-  width: 100vw;
-  background-color: antiquewhite;
   /*
   ------------------------------------------------
   justify-content : 주축 아이템의 정렬방법 / 배치방법
@@ -17,6 +13,10 @@
   - center ( 아이템들을 가운데로 정렬 )
   ------------------------------------------------
   */
+.container {
+  display: flex;
+  width: 100vw;
+  background-color: antiquewhite;
   justify-content: space-evenly;
 }
 
