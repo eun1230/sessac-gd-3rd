@@ -185,18 +185,18 @@ console.log(nums); //[1, 2, 3, 4, 5]
 console.log(mapArr); //[100, 200, 300, 400, 500]
 
 //1 ~ 100
-//for
-sum = 0;
-for (let i = 1; i <= 100; i++) {
-  sum += i;
-}
-console.log(sum);
-
-//for of
 let arr5 = [];
 for (let i = 1; i <=100; i++) {
   arr5.push(i);
 }
+//for
+sum = 0;
+for (let i = 0; i <arr5.length; i++) {
+  sum+=arr5[i];
+}
+console.log(sum);
+
+//for of
 sum = 0;
 for (let i of arr5) {
   sum += i;
@@ -205,7 +205,6 @@ console.log(sum);
 
 //for each
 sum = 0;
-
 arr5.forEach(function (i) {
   sum += i;
 });
