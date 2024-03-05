@@ -76,3 +76,6 @@ container.append(pEl);
 const pEl2 = "새로 만들어진 두 번째 태그";
 container.append(pEl2);
 
+//요소 삭제
+
+
