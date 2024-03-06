@@ -83,6 +83,7 @@ function displayProducts(products) {
       //쿼리 스트링을 사용해 detail.html파일로 이동
       //id라는 키로 product.id값을 함께 전달
       window.location.href = `detail.html?id=${product.id}`;
+
     });
 
     productList.append(productEl);
