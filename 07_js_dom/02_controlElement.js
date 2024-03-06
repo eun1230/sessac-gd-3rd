@@ -76,6 +76,59 @@ container.append(pEl);
 const pEl2 = "새로 만들어진 두 번째 태그";
 container.append(pEl2);
 
+const p1 = document.createElement("p"); // P태그 생성
+// 3줄 모두 동일한 작업
+p1.innerHTML = "24/03/06 - 새로 추가된 p태그";
+// p1.innerText= "24/03/06 - 새로 추가된 p태그";
+// p1.append( "24/03/06 - 새로 추가된 p태그");
+
+container.append(p1, "그냥 텍스트 넣은 것"); // p태그말고 그냥 텍스트 들어간 것
+
+//append.Child()
+const p2 = document.createElement("p");
+p2.innerText = "appendChild 사용해서 추가한 1번째 p태그";
+const p3 = document.createElement("p");
+p3.innerText = "appendChild 사용해서 추가한 2번째 p태그";
+const p4 = document.createElement("p");
+p4.innerText = "appendChild 사용해서 추가한 3번째 p태그";
+
+container.appendChild(p2);
+container.appendChild(p3);
+container.appendChild(p4);
+
+// container.appendChild(p2, p3, p4); //위의 3줄과 동일함
+// container.appendChild(p3, p4); // p4는 추가 안됨
+// container.appendChild("텍스트 추가 안됨"); // 텍스트 불가 (append와 다른점)
+
+//prepend()
+const div2 = document.createElement("div");
+div2.classList.add("prepend");
+div2.innerText = "prepend로 추가한 첫번째 요소";
+container.prepend(div2);
+
+const div3 = document.createElement("div");
+div3.classList.add("prepend");
+div3.innerText = "prepend로 추가한 두번째 요소";
+container.prepend(div3);
+
+//before, after
+
+//before
+const h1 = document.querySelector("#h1");
+const h3 = document.createElement("h3");
+h3.innerText = "before로 추가한 h3";
+h1.before(h3);
+
+//after
+const h1_2 = document.querySelector("#h1");
+const h3_2 = document.createElement("h3");
+h3_2.innerText = "after로 추가한 h3";
+h1_2.after(h3_2);
+
 //요소 삭제
+const delDiv = document.querySelector(".container div");
+delDiv.remove();
 
-
+// 목록 - 장미 삭제
+const rose = document.querySelector("#flower li:nth-child(2)");
+rose.remove();
