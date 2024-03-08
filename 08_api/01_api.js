@@ -161,7 +161,7 @@ async function getMovieData() {
   let word = "love";
   h3.innerText = `검색된 키워드 : ${word}`;
   const response = await fetch(
-    `http://www.omdbapi.com/?i=tt3896198&apikey=5572ffca&s=${word}`
+    `api-key값&s=${word}`
   );
   const movieData = await response.json(); //json으로 바꾸기
   console.log(movieData.Search); //확인해보기
