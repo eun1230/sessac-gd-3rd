@@ -9,7 +9,7 @@ import { consoleName } from "./util.js";
 import { consoleName2 } from "./util.js";
 
 // export default 키워드 작성시 중괄호 감싸지 않고 불러옴
-import consoleNameMain from './util.js';
+import consoleNameMain from "./util.js";
 
 // 한 줄로 default 함수와 다른 함수들도 불러올 수 있음
 // import consoleNameMain, { consoleName, consoleName2 } from './02_util.js';
@@ -19,4 +19,4 @@ import consoleNameMain from './util.js';
 
 consoleName("ㅇㅇ");
 consoleName2("ㅇㅇ");
-consoleNameMain("ㅇㅇ");
+consoleNameMain("ㅎㅇ");
