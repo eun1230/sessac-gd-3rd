@@ -1,13 +1,13 @@
-//  선택하기
+//선택하기;
 console.log($(".testSelector"));
 
-// 기존의 방법과 다르게 제이쿼리로 사용한 addEventListener
-// document.querySelector(".testSelector").addEventListener("click", () => {
-//   alert("클릭됨");
-// });
-// $(".testSelector").addEventListener("click", () => {
-//   alert("클릭됨");
-// });
+// // 기존의 방법과 다르게 제이쿼리로 사용한 addEventListener
+// // document.querySelector(".testSelector").addEventListener("click", () => {
+// //   alert("클릭됨");
+// // });
+// // $(".testSelector").addEventListener("click", () => {
+// //   alert("클릭됨");
+// // });
 
 function useVal() {
   //인자에 아무것도 전달하지 않았으므로 해당 요소의 value값을 가져온다
@@ -34,12 +34,12 @@ function useAttr() {
   $("input").attr("type", "checkbox");
 
   // 속성 값 가져오기
-  console.log($("input").attr("placeholder"));
+  // console.log($("input").attr("placeholder"));
 }
 
 function useText() {
   //span값 텍스트만 가져오기
-  console.log($("#sp").text());
+  // console.log($("#sp").text());
 
   //요소 텍스트 수정하기
   $("#sp").text("text메소드 사용해서 수정함");
@@ -49,7 +49,7 @@ function useText() {
 
 function useHtml() {
   //span의 content(html)가져오기
-  console.log($("#sp").html());
+  // console.log($("#sp").html());
 
   //요소 html코드 수정하기
   $("#sp").html("html메소드 사용해서 <b>수정함</b>");
@@ -67,26 +67,26 @@ function useCss() {
 function useAppend() {
   //container요소의 마지막 자식으로 요소 추가
 
-  // //append()
-  // $('.container').append(`<div class="box red"></div>`)
+  //append()
+  $('.container').append(`<div class="box red"></div>`)
 
-  // //prepend()
-  // $(".container").prepend(`<div class="box yellow"></div>`);
+  //prepend()
+  $(".container").prepend(`<div class="box yellow"></div>`);
 
   //before() : 선택된 모든 요소의 앞에 요소 추가됨, 반복문으로 돌지 않아도 모두 저장
   $(".red").before(`<div class="box orange"></div>`);
   //css선택자를 자세하게 작성해서 특정 요소만 선택할 수 있음
   $(".container .red:first-child").before(`<div class="box orange"></div>`);
 
-    //after()
-    $(".orange").after(`<div class="box green"></div>`);
-  }
-  function useRemove() {
-    //첫번째 red만 삭제
-    $("#red").remove();
+  //after()
+  $(".orange").after(`<div class="box green"></div>`);
+}
+function useRemove() {
+  //첫번째 red만 삭제
+  $("#red").remove();
 
-    //모두 삭제
-    $(".container").empty();
+  //모두 삭제
+  $(".container").empty();
 }
 
 function useParent() {
@@ -122,5 +122,5 @@ function controlClass() {
   console.log($("#controlClass").hasClass("red")); // red라는 클래스 갖고있는가? -> true, false
 
   //toggleClass
-$("#controlClass").toggleClass("red"); // red라는 클래스있으면 제거 없으면 추가
+  $("#controlClass").toggleClass("red"); // red라는 클래스있으면 제거 없으면 추가
 }
