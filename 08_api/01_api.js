@@ -1,3 +1,4 @@
+import config from "././api_key.js";
 //간단한 비동기 코드 예시
 //순서는 1,3,2
 //setTimeout은 해당 시간동안 코드가 실행을 멈추는 것이 아니라 setTimeout과 다음줄에 작성된 코드가 모두 실행되고 있는 것
@@ -161,8 +162,7 @@ async function getMovieData() {
   let word = "love";
   h3.innerText = `검색된 키워드 : ${word}`;
   const response = await fetch(
-    `api-key값&s=${word}`
-  );
+    `${config.movie_api_key값}&s=${word}`);
   const movieData = await response.json(); //json으로 바꾸기
   console.log(movieData.Search); //확인해보기
 
