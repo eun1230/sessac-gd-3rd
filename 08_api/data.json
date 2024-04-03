@@ -1,5 +1,6 @@
 [
   {
+    "category":"best",
     "id": 1,
     "name": "노트북",
     "price": 1000000,
@@ -7,6 +8,7 @@
     "description": "고성능 노트북입니다."
   },
   {
+    "category":"자유게시판",
     "id": 2,
     "name": "스마트폰",
     "price": 800000,

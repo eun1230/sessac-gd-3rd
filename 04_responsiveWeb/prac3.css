@@ -61,7 +61,7 @@ header .menu-bar {
     flex-direction: column;
   }
   header .small-menu li {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     height: 60px;
     text-align: center;
     line-height: 60px;

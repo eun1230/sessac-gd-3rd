@@ -70,7 +70,6 @@ const btn = document.querySelector("#search-btn");
 // 서버에서 받아온 데이터를 부라우저에 로드함
 function displayProducts(products) {
   productList.innerHTML = ""; // 상품 목록 초기화
-
   products.forEach((product) => {
     // 만약 검색을 한 경우에는 원래 있던 요소들을 삭제해야
     // 검색 결과 요소들만 볼 수 있음
@@ -83,9 +82,7 @@ function displayProducts(products) {
       //쿼리 스트링을 사용해 detail.html파일로 이동
       //id라는 키로 product.id값을 함께 전달
       window.location.href = `detail.html?id=${product.id}`;
-
     });
-
     productList.append(productEl);
   });
 }
