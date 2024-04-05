@@ -1,6 +1,7 @@
 import './App.css';
 import ClassComponent from './components/ClassComponent';
 import FunctionComponent from './components/FunctionComponent';
+import Prac from './components/Prac';
 
 function App() {
   return (
@@ -9,9 +10,8 @@ function App() {
       <ClassComponent />
       {/*불러와 사용하는 방법2*/}
       <ClassComponent></ClassComponent>
-
       <FunctionComponent />
-      <FunctionComponent></FunctionComponent>
+      <Prac />
     </div>
   );
 }
