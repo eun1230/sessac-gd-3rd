@@ -4,12 +4,14 @@ import './App.css';
 import FavoriteFood from './components/FavoriteFood.jsx';
 import Book from './components/Book.jsx';
 import PracClass from './components/PracClass.jsx';
-import ProductList from './components/ProductList.jsx';
+
+import ProductItem from './components/ProductItem.jsx';
+import ProductContainer from './components/ProductContainer.jsx';
 
 function App() {
-  // const sayHi = () => {
-  //   alert('Hello?');
-  // };
+  const sayHi = () => {
+    alert('Hello?');
+  };
   const products = [
     {
       id: 1,
@@ -111,11 +113,16 @@ function App() {
         type="자기계발서"
       ></Book>
       <PracClass text="Hello,!! " valid="콘솔 띄우기 성공!" />
+      <PracClass valid="콘솔 띄우기 성공!" />
+
       {/* 상품리스트 가져와 반복으로 가져오기 */}
       {/* 해당 값들의 고유값인 id값이 필요하다는 것을 기재해야함 -> key={prod.id} */}
-      {products.map((prod) => (
-        <ProductList prodData={prod} key={prod.id} />
-      ))}
+      {/* {products.map((prod) => (
+        <ProductItem prodData={prod} key={prod.id} />
+      ))} */}
+      {/* 연습 develop */}
+      <ProductContainer products={products}/>
+      
     </div>
   );
 }
