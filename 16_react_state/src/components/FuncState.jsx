@@ -20,7 +20,7 @@ export default function FuncState() {
 
   const [apple, setApple] = useState('사과');
   const [apple2, setApple2] = useState('사과');
-  const [btn, setBtn] = useState('영어로 바꾸기');
+  const [showEnglish, setShowEnglish] = useState(true);
   const [number, setNumber] = useState(0);
 
   return (
@@ -65,23 +65,16 @@ export default function FuncState() {
         +1{' '}
       </button>
       <hr />
-      <h2> 버튼 클릭 - 토글 </h2>
+      <h2>버튼 클릭 - 토글</h2>
       <div> useState 사용 </div>
       <button
         onClick={() => {
-          if (apple2 === 'apple') {
-            setApple2('사과');
-            setBtn('영어로 바꾸기');
-          } else {
-            setApple2('apple');
-            setBtn('한글로 바꾸기');
-          }
+          setShowEnglish(!showEnglish);
         }}
       >
-        {btn}
+        {showEnglish ? '한글' : '영어'}로 바꾸기
       </button>
-
-      <div>{apple2}</div>
+      <div>{showEnglish ? 'apple' : '사과'}</div>
     </>
   );
 }

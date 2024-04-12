@@ -30,7 +30,7 @@ export default function CharactorContainer() {
     const selected = characters.find((character) => character.name === name);
     setSelectedCharacter(selected);
   };
-  
+
   return (
     <div>
       <hr />

@@ -10,7 +10,7 @@ export default class ClassStatePrac extends Component {
       <div>
         <hr />
 
-        <h2>클래스컴포넌트 (+2),(-1) </h2>
+        <h2>State (+2),(-1) </h2>
 
         <button
           onClick={() => {
