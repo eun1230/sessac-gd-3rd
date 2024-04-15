@@ -16,8 +16,8 @@ export default class ClassRef extends Component {
 
         <div>localVar : {this.localVar.current}</div>
         <button onClick={() => this.localVar.current++}>localVar++</button>
-        <div>state : {this.stateVar}</div>
-        <button onClick={() => this.setState({ state: this.stateVar++ })}>
+        <div>state : {this.state.stateVar}</div>
+        <button onClick={() => this.setState({ state: this.state.stateVar++ })}>
           state++
         </button>
       </div>

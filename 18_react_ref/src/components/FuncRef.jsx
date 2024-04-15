@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 export default function FuncRef() {
   //react에서 DOM요소 조작
   //react 에서는 DOM요소에 직접적으로 접근해 조작하지 않는 것이 좋다.
-  // virtual DOM을 사용하기 때문에 직접적인 DOM 조작은 react에서 지양해달라고 했음
+  // virtual DOM을 사용하기 때문에 직접적인 DOM 조작은 react에서 지양해달라고 공식문서에 기재되어 있다.
   const input = useRef();
 
   const focusInput = () => {
@@ -33,7 +33,7 @@ export default function FuncRef() {
     <>
       <h2>함수형 컴포넌트에서 ref사용하기 </h2>
       useRef를 사용해 만든 ref는 DOM요소와 연결해 사용하고 <br />
-      ref속성으로 만든 ref들을 전달한다.
+      ref속성으로 만든 ref를 전달
       <br />
       <input type="text" ref={input} />
       <button onClick={focusInput}>버튼</button>

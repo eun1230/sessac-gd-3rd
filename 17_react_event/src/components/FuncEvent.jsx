@@ -15,6 +15,7 @@ export default function FuncEvent() {
   const alertMsg = (message) => {
     alert(message);
   };
+  
   const handleEnter = (e) => {
     // console.log(e);
     // e 는 리액트 합성 이벤트 객체를 의미하고 target은 해당 이벤트가 발생한 요소에 접근할 수 있는 것.
