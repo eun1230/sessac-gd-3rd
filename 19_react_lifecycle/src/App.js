@@ -1,6 +1,7 @@
 import './App.css';
 import ClassLifeCycle from './components/ClassLifeCycle';
 import FuncLifeCycle from './components/FuncLifeCycle';
+import LifeCycle from './components/LifeCycle';
 import PracContainer from './components/PracContainer';
 import PracFakePost from './components/PracFakePost';
 
@@ -9,11 +10,13 @@ function App() {
     <div className="App">
       <ClassLifeCycle />
       <hr />
-      <FuncLifeCycle />
+      {/* <FuncLifeCycle /> */}
       <hr />
       <PracContainer>
         <PracFakePost />
       </PracContainer>
+      <hr />
+      <LifeCycle />
     </div>
   );
 }
