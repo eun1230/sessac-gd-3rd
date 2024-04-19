@@ -1,6 +1,7 @@
 import ProductList from '../components/ProductList';
 
 export default function ProductPage() {
+  
   const tempProductsData = [
     {
       id: 1,
@@ -15,6 +16,7 @@ export default function ProductPage() {
       body: '삼성전자 삼성 외장SSD T7 1TB 외장하드 1테라 USB3.2 Gen.2 Type-C MU-PC1T0 공식인증 (정품)',
     },
   ];
+
   return (
     <div>
       <div>여기는 상품 목록 페이지 입니다.</div>

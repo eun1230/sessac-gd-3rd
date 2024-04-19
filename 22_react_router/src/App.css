@@ -19,6 +19,12 @@ html {
 hr {
   margin: 30px;
 }
+button{
+  padding:10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(255, 218, 165);
+}
 
 .header {
   text-align: center;
@@ -57,4 +63,8 @@ hr {
   flex-direction: row;
   width: 100vw;
   flex-wrap: wrap;
+}
+.detail-box{
+  margin:auto;
+  width:400px;
 }
