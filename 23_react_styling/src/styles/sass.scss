@@ -1,0 +1,164 @@
+.sass-box {
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+}
+//----------------------------
+
+// 변수 사용
+// 디자인 시스템(색상, 글자크기, 여백 등 미치 정한 디자인시스템)을 변수에 저장해 사용
+$color-main: rgb(137, 141, 229);
+$boxShadow: 2px 2px 6px gray;
+$mobile: 720px;
+
+//----------------------------
+
+.sass-var {
+  background-color: $color-main;
+  box-shadow: $boxShadow;
+}
+.sass-var2 {
+  color: $color-main;
+}
+@media screen and (max-width: $mobile) {
+  .sass-var {
+    background-color: burlywood;
+  }
+}
+
+// 연산
+.sass-calc {
+  width: 100vw-50vw;
+  height: 50vh-10vh;
+  border: 5px solid yellowgreen;
+}
+//----------------------------
+
+// 중첩
+// .div1 > .div2 > .div3
+.sass-div1 {
+  border: 5px solid pink;
+  padding: 20px;
+  .sass-div2 {
+    border: 5px solid skyblue;
+    padding: 10px;
+    .sass-div3 {
+      background-color: coral;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &:hover {
+    background-color: rgb(179, 233, 157);
+    border: 5px solid rgb(179, 233, 157);
+  }
+}
+//----------------------------
+
+//믹스인
+//sccs에서 사용하는 함수
+@mixin bold-border() {
+  border: 5px solid rgb(115, 115, 115);
+}
+
+// 매개변수를 받아 재사용성을 높임
+@mixin add-border($borderWidth, $bordercolor) {
+  border: $borderWidth $bordercolor solid;
+}
+
+// 매개변수 기본값을 지정
+@mixin add-border2($borderWidth: 13px, $bordercolor: rgb(248, 233, 146)) {
+  border: $borderWidth $bordercolor solid;
+}
+
+@mixin default-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//----------------------------
+.sass-mixin-box {
+  @include default-flex();
+}
+
+.sass-mixin {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(231, 255, 233);
+  // @include bold-border();
+  // @include add-border(8px, rgb(11, 82, 11))
+  // @include add-border2();
+  // 협업 시에는 해당 mixin이 어떤 스타일링이 되는지 작성해주는 것이 좋음
+  @include add-border2($bordercolor: rgb(224, 224, 161), $borderWidth: 15px);
+}
+
+//----------------------------
+//확장
+.sass-btn {
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: medium;
+}
+.sass-btn-extends {
+  @extend .sass-btn;
+  background-color: rgb(228, 189, 159);
+}
+
+//----------------------------
+
+.sass-for-container {
+  border: 1px solid black;
+
+  /*
+  1. nth사용하여 스타일링하는 방법
+
+ //첫번째 자식 div 너비 100px;
+  &:nth-child(1) {
+    height: 200px;
+    width: 100px;
+    background-color: burlywood;
+  }
+  //두번째 자식 div 너비 120px;
+  &:nth-child(2) {
+    height: 200px;
+    background-color: burlywood;
+    width: 120px;
+  }
+  //세번째 자식 div 너비 140px;
+  &:nth-child(3) {
+    height: 200px;
+    background-color: burlywood;
+    width: 140px;
+  }
+
+*/
+  // #{$변수명} : 문자보간법문자그대로 적용시켜 연산이 되지 않게 한다.
+  // 믹스인, 임포트, 일반적인 sass문법 등 변수나 문자를 통해
+  // 가변적인 값을 사용해야 할 경우  보간법으로 작성한다.
+
+  // 2. for $i from 1 to 3
+  //  (to는 미만 , through 는 이하 )까지
+  @for $i from 1 through 3 {
+    div:nth-child(#{$i}) {
+      background-color: rgb(248, 204, 148);
+      height: 100px;
+      width: 80px + (20px * $i);
+    }
+  }
+}
+
+// 3. If-else문
+
+@mixin useIf($bgcolor: #fff) {
+  background-color: $bgcolor;
+  @if ($bgcolor == #000) {
+    color: white;
+  } @else {
+    color: black;
+  }
+}
+.sass-use-if {
+  @include useIf($bgcolor: black);
+}
