@@ -1,0 +1,11 @@
+.container {
+  border: 5px solid salmon;
+  
+}
+
+.first{
+  background-color : rgb(210, 210, 210);
+}
+.second{
+  font-size: 2erm;
+}
