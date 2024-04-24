@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Cafe24Ssurround';
+  margin: 10px;
+}
+
+html {
+  background-color: rgba(251, 237, 224, 0.75);
+  text-align: center;
+}
+
+hr {
+  margin: 30px;
+}
+button{
+  padding:10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(255, 218, 165);
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 4px 0 rgba(107, 107, 107, 0.223);
+
+}
+
+button:hover {
+  background-color: rgb(252, 210, 131);
+}
+/* 
+button:focus {
+  box-shadow: 0 0 0 1px rgba(95, 95, 95, 0.517);
+} */
+
+
+button:active {
+  box-shadow: 1px 1px 0  rgba(107, 107, 107, 0.223);
+
+  position: relative;
+  top:2px;
+}
